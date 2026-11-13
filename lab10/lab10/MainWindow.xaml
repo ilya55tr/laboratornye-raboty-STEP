@@ -1,0 +1,51 @@
+﻿<Window x:Class="lab10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab10"
+        mc:Ignorable="d"
+        Title="Кликер" Height="600" Width="700"
+        WindowStartupLocation="CenterScreen">
+    <StackPanel Margin="20"
+                VerticalAlignment="Center">
+
+        <TextBlock Text="КЛИКЕР"
+                   FontSize="28"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+
+        <TextBlock FontSize="24"
+                   HorizontalAlignment="Center">
+            <Run Text="Монеты: "/>
+            <Run Text="{Binding Coins, Mode=OneWay}"/>
+        </TextBlock>
+
+        <TextBlock FontSize="17"
+                   HorizontalAlignment="Center"
+                   Margin="0,10,0,0">
+            <Run Text="За клик: "/>
+            <Run Text="{Binding CoinsPerClick, Mode=OneWay}"/>
+        </TextBlock>
+
+        <TextBlock FontSize="17"
+                   HorizontalAlignment="Center"
+                   Margin="0,5,0,20">
+            <Run Text="В секунду: "/>
+            <Run Text="{Binding CoinsPerSecond, Mode=OneWay}"/>
+        </TextBlock>
+
+        <Button Content="КЛИК!"
+                Height="60"
+                FontSize="22"
+                Margin="0,0,0,15"
+                Click="ClickButton_Click"/>
+
+        <Button Content="Магазин улучшений"
+                Height="45"
+                FontSize="17"
+                Click="ShopButton_Click"/>
+
+    </StackPanel>
+</Window>

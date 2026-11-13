@@ -1,0 +1,70 @@
+﻿<Window x:Class="lab10.ShopWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab10"
+        mc:Ignorable="d"
+        Title="Магазин улучшений" 
+        Height="430" Width="400"
+        WindowStartupLocation="CenterOwner">
+    <StackPanel Margin="20">
+
+        <TextBlock Text="МАГАЗИН"
+                   FontSize="26"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+
+        <TextBlock FontSize="20"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20">
+            <Run Text="Монеты: "/>
+            <Run Text="{Binding Coins, Mode=OneWay}"/>
+        </TextBlock>
+
+        <GroupBox Header="Улучшение клика"
+                  Margin="0,0,0,15">
+
+            <StackPanel Margin="10">
+
+                <TextBlock>
+                    <Run Text="Монет за клик: "/>
+                    <Run Text="{Binding CoinsPerClick}"/>
+                </TextBlock>
+
+                <TextBlock Margin="0,5,0,10">
+                    <Run Text="Цена: "/>
+                    <Run Text="{Binding ClickUpgradePrice}"/>
+                </TextBlock>
+
+                <Button Content="Улучшить клик (+1)"
+                        Height="35"
+                        Click="BuyClick_Click"/>
+
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Пассивный доход">
+
+            <StackPanel Margin="10">
+
+                <TextBlock>
+                    <Run Text="Монет в секунду: "/>
+                    <Run Text="{Binding CoinsPerSecond}"/>
+                </TextBlock>
+
+                <TextBlock Margin="0,5,0,10">
+                    <Run Text="Цена: "/>
+                    <Run Text="{Binding PassiveUpgradePrice}"/>
+                </TextBlock>
+
+                <Button Content="Улучшить доход (+1)"
+                        Height="35"
+                        Click="BuyPassive_Click"/>
+
+            </StackPanel>
+        </GroupBox>
+
+    </StackPanel>
+</Window>
