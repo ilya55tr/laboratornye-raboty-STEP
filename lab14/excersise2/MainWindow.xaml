@@ -1,0 +1,59 @@
+﻿<Window x:Class="excersise2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:excersise2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="ClientsList">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Rectangle>
+                            <Rectangle.Fill>
+                                <SolidColorBrush Color="{Binding PreferredColor}" />
+                            </Rectangle.Fill>
+                        </Rectangle>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="0"
+                                   Content="{Binding Id}"
+                                   ContentStringFormat="#{0}"
+                                   FontSize="20" />
+
+                            <StackPanel Grid.Column="1">
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="{Binding FirstName}"
+                                           FontSize="17" />
+                                    <Label Content="{Binding LastName}"
+                                           FontSize="17" />
+                                </StackPanel>
+
+                                <TextBlock Text="{Binding ShortInfo}" />
+                                <TextBlock Text="Подключённые тарифы:"
+                                            FontWeight="Bold"
+                                            Margin="0,8,0,4" />
+
+                                <ItemsControl ItemsSource="{Binding Tariffs}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding}"
+                                                       Margin="8,2,0,2" />
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

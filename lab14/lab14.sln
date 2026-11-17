@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab14", "lab14\lab14.csproj", "{399B1B7A-2661-4151-90D3-37C806C4B4B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "excersise1", "excersise1\excersise1.csproj", "{BB753560-9EFB-439F-BAE7-530389875BA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "excersise2", "excersise2\excersise2.csproj", "{D56BF980-85A5-4A52-BDF5-D3856EF7F8B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{399B1B7A-2661-4151-90D3-37C806C4B4B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{399B1B7A-2661-4151-90D3-37C806C4B4B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{399B1B7A-2661-4151-90D3-37C806C4B4B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{399B1B7A-2661-4151-90D3-37C806C4B4B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB753560-9EFB-439F-BAE7-530389875BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB753560-9EFB-439F-BAE7-530389875BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB753560-9EFB-439F-BAE7-530389875BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB753560-9EFB-439F-BAE7-530389875BA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D56BF980-85A5-4A52-BDF5-D3856EF7F8B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56BF980-85A5-4A52-BDF5-D3856EF7F8B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56BF980-85A5-4A52-BDF5-D3856EF7F8B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56BF980-85A5-4A52-BDF5-D3856EF7F8B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB38DA6A-5CF9-4002-B2BD-E7DC25CC32D1}
+	EndGlobalSection
+EndGlobal
